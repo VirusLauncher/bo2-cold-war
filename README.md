@@ -19,9 +19,9 @@ https://forum.plutonium.pw/user/iamkappy
 - Holding the melee button drops your current weapon
 
 # Ring of Fire:
-- Having at least 3 perks at once grants the player with the Ring of Fire ability
-- Players activate their Ring of Fire by standing still for at least 5 seconds
-- The ability will stay active as long as the player remains still, granting the player with increased DPS
+- Having at least 3 perks grants the player with the Ring of Fire ability
+- Ring of Fire is activated by standing still for at least 5 seconds, and will remain active until the player moves
+- While activated, players receive an awesome DPS boost!
 
 # Perks:
 - Quick Revive improves health regeneration
