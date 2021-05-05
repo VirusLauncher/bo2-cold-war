@@ -2,8 +2,6 @@
 
 **Cold War Zombies mod for BO2!**
 
-FULL DOWNLOAD: https://github.com/teh-bandit/cold-war-bo2/releases
-
 **SPECIAL THANKS to Kappy for making these sexy perk machines!**
 https://forum.plutonium.pw/user/iamkappy
 
