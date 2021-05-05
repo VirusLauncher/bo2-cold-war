@@ -19,7 +19,7 @@ https://forum.plutonium.pw/user/iamkappy
 # Ring of Fire:
 - Having at least 3 perks at once grants the player with the Ring of Fire ability
 - Players activate their Ring of Fire by standing still for at least 5 seconds
-- The ability will stay active as long as the player remains still, granting the player with improved fire rates and increased bullet damage
+- The ability will stay active as long as the player remains still, granting the player with increased DPS
 
 # Perks:
 - Quick Revive also improves health regeneration
