@@ -12,7 +12,6 @@ https://forum.plutonium.pw/user/iamkappy
 - Backpedal speed set to 100%
 - Removed jumping slowdowns
 - HUD changes: Health bar, Ring of Fire, self revives, etc..
-- Player default health set to 150
 - Zombie health capped at 10,000
 - Texture details and map colours enhanced
 - Depth of field and fog removed
