@@ -11,7 +11,6 @@ init()
 	precacheshader("damage_feedback");
 	precacheshader("menu_mp_fileshare_custom");
 	
-	level.cmPlayerMaxHealth = getDvarIntDefault("cmPlayerMaxHealth", 150);
 	level.perk_purchase_limit = getDvarIntDefault("cmPlayerPerkLimit", 9);
 	level.cmPerkDoubleTapFireRate = getDvarFloatDefault("cmPerkDoubleTapFireRate", 0.5);
 	setdvar("perk_weapRateMultiplier", level.cmPerkDoubleTapFireRate);
@@ -38,24 +37,9 @@ onPlayerConnect()
 	{
 		level waittill("connected", player);
 		player iprintln("^1Cold War Zombies");
-		player thread player_health();
 		player thread zombie_health();
 		player thread visuals();
 		player thread onPlayerSpawned();
-	}
-}
-
-player_health()
-{
-	level endon("end_game");
-	self endon("disconnect");
-	for(;;)
-	{
-		self waittill_any("spawned_player", "player_revived", "chugabud_effects_cleanup");
-		wait_network_frame();
-		self setMaxHealth(level.cmPlayerMaxHealth);
-		self.health = level.cmPlayerMaxHealth;
-		self.maxHealth = self.health;
 	}
 }
 
