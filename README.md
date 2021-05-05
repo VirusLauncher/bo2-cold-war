@@ -21,6 +21,6 @@ https://forum.plutonium.pw/user/iamkappy
 - The ability will stay active as long as the player remains still, granting the player with increased DPS
 
 # Perks:
-- Quick Revive also improves health regeneration
+- Quick Revive improves health regeneration
 - Stamin-up further increases movement speed and removes fall damage
 - Removed perks not included in Cold War (mod will be updated when new perks release)
