@@ -14,6 +14,7 @@ https://forum.plutonium.pw/user/iamkappy
 - Player default health set to 150
 - Zombie health capped at 10,000
 - Texture details and map colours enhanced
+- Depth of field and fog removed
 - Holding the melee button drops your current weapon
 
 # Ring of Fire:
