@@ -10,20 +10,25 @@ init()
 {
 	precacheshader("damage_feedback");
 	precacheshader("menu_mp_fileshare_custom");
+	
 	level.cmPlayerMaxHealth = getDvarIntDefault("cmPlayerMaxHealth", 150);
-	level.perk_purchase_limit = getDvarIntDefault("cmPlayerPerkLimit", 9); 
+	level.perk_purchase_limit = getDvarIntDefault("cmPlayerPerkLimit", 9);
+	level.cmPerkDoubleTapFireRate = getDvarFloatDefault("cmPerkDoubleTapFireRate", 0.5);
+	setdvar("perk_weapRateMultiplier", level.cmPerkDoubleTapFireRate);
+	
 	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_rof");
 	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_additionalprimaryweapon");
 	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_flakjacket");
 	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_nomotionsensor");
-	level.cmPerkDoubleTapFireRate = getDvarFloatDefault("cmPerkDoubleTapFireRate", 0.5);
-	setdvar("perk_weapRateMultiplier", level.cmPerkDoubleTapFireRate);
+
 	level._random_zombie_perk_cost = undefined;
 	level._challenges = undefined;
+	
 	setDvar("player_strafeSpeedScale", 1);
 	setDvar("player_sprintStrafeSpeedScale", 1);
 	setDvar("player_backSpeedScale", 1);
 	setDvar("jump_slowdownEnable", 0);
+	
 	level thread onPlayerConnect();
 }
 
