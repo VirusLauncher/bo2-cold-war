@@ -14,11 +14,6 @@ init()
 	level.perk_purchase_limit = getDvarIntDefault("cmPlayerPerkLimit", 9);
 	level.cmPerkDoubleTapFireRate = getDvarFloatDefault("cmPerkDoubleTapFireRate", 0.5);
 	setdvar("perk_weapRateMultiplier", level.cmPerkDoubleTapFireRate);
-	
-	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_rof");
-	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_additionalprimaryweapon");
-	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_flakjacket");
-	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_nomotionsensor");
 
 	level._random_zombie_perk_cost = undefined;
 	level._challenges = undefined;
@@ -36,7 +31,6 @@ onPlayerConnect()
 	for(;;)
 	{
 		level waittill("connected", player);
-		player iprintln("^1Cold War Zombies");
 		player thread zombie_health();
 		player thread visuals();
 		player thread onPlayerSpawned();
@@ -60,7 +54,7 @@ zombie_health()
 
 visuals()
 {
-	self setClientDvar("r_fog", 0);
+	self setClientDvar("r_fog", 1);
 	self setClientDvar("r_dof_enable", 0);
 	self setClientDvar("r_lodBiasRigid", -1000);
 	self setClientDvar("r_lodBiasSkinned", -1000);
